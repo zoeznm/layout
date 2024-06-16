@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7_layout</title>
+  <style>
+        div {
+      background-color: wheat;
+      width: auto;
+      height: 800px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+    div > section:nth-child(1) {
+      background-color: lightblue;
+      height: 800px;
+      width: 50%;
+      position: relative;
+    }
+    div > section:nth-child(2) {
+      background-color: lightcoral;
+      height: 800px;
+      width: 50%;
+    }
+    div > section:nth-child(2) > footer:nth-child(1) {
+      background-color: lightgreen;
+      width: auto;
+      height: 200px;
+      margin-top: 400px;
+    }
+    div > section:nth-child(2) > footer:nth-child(2) {
+      background-color: lightpink;
+      width: auto;
+      height: 200px;
+      margin-bottom: 800px;
+    }
+    div > section:nth-child(2) > footer:nth-child(1) > footer {
+      background-color: lightgoldenrodyellow;
+      height: 200px;
+      width: 440px;
+    }
+    div > section:nth-child(2) > footer:nth-child(2) > footer {
+      background-color: lightsalmon;
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      right: 0;
+    }
+    div > section:nth-child(1) > aside:nth-child(1) {
+      background-color: lightcyan;
+      height: 800px;
+      width: 50%;
+    }
+    div > section:nth-child(1) > aside:nth-child(2) {
+      background-color: lightgrey;
+      height: 800px;
+      width: 50%;
+      margin-left: 50%;
+      position: absolute;
+      bottom: 0;
+    }
+    div > section:nth-child(1) > aside:nth-child(2) > aside {
+      background-color: lightgreen;
+      height: 300px;
+    }
+    div > section:nth-child(1) > aside:nth-child(1) > aside:nth-child(1) {
+      background-color: lightslategray;
+      height: 150px;
+    }
+    div > section:nth-child(1) > aside:nth-child(1) > aside:nth-child(2) {
+      background-color: sienna;
+      height: 350px;
+      position: relative;
+    }
+    div > section:nth-child(1) > aside:nth-child(1) > aside:nth-child(3) {
+      background-color: blue;
+      height: 150px;
+    }
+    div > section:nth-child(1) > aside:nth-child(1) > aside:nth-child(4) {
+      background-color: aquamarine;
+      height: 150px;
+    }
+    div > section:nth-child(1) > aside:nth-child(1) > aside:nth-child(2) > nav {
+      background-color: antiquewhite;
+      height: 350px;
+      width: 50%;
+      position: absolute;
+      right: 0;
+
+    }
+    div > section:nth-child(1) > aside:nth-child(1) > aside:nth-child(2) > nav > nav {
+      background-color: blueviolet;
+      width: auto;
+      height: 50%;
+    }
+
+ 
+      
+    
+  </style>
+</head>
+<body>
+  <div>
+    <section>
+      <aside>
+        <aside></aside>
+        <aside>
+          <nav>
+            <nav></nav>
+          </nav>
+        </aside>
+        <aside></aside>
+        <aside></aside>
+      </aside>
+      <aside>
+        <aside></aside>
+      </aside>
+    </section>
+
+
+    <section>
+      <footer>
+        <footer></footer>
+      </footer>
+      <footer>
+        <footer></footer>
+      </footer>
+    </section>
+  </div>
+</body>
+</html>

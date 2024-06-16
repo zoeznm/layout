@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4_layout</title>
+  <style>
+          div {
+      background-color: wheat;
+      width: auto;
+      height: 800px;
+      display: flex;
+      justify-content: space-between;
+    }
+    div > aside {
+      background-color: aquamarine;
+      height: 800px;
+      width: 710px;
+      margin-left: 1100px;
+      position: relative;
+    }
+    div > aside > aside:nth-child(1){
+      background-color: blue;
+      height: 800px;
+      width: 190px;
+      margin-left: 375px;
+      position: absolute;
+    }
+    div > aside > aside:nth-child(2){
+      background-color: lightgreen;
+      height: 800px;
+      width: 200px;
+      margin-left: 175px;
+      
+    }
+    div > aside > article{
+      background-color: brown;
+      height: 190px;
+      width: 175px;
+      position: absolute;
+      bottom: 0;
+      
+    }
+    div > aside > nav {
+      background-color: lightslategray;
+      height: 190px;
+      width: 175px;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 190px;
+    }
+
+    div > aside > aside:nth-child(1) >article:nth-child(1){
+      background-color: red;
+      height: 190px;
+      width: 190px;
+      margin-top: 420px;
+    }
+    div > aside > aside:nth-child(1) >article:nth-child(2){
+      background-color: blueviolet;
+      height: 190px;
+      width: 190px;
+    }
+    div > article {
+      background-color: lightgray;
+      width: 190px;
+      height: 800px;
+      position: absolute;
+    }
+    div > article > nav:nth-child(1) {
+      background-color: lightblue;
+      width: 190px;
+      height: 190px;
+      margin-top: 420px;
+    }
+    div > article > nav:nth-child(2) {
+      background-color: lightpink;
+      width: 190px;
+      height: 190px;
+      margin-bottom: 100px;
+      
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <aside>
+      <aside>
+        <article></article>
+        <article></article>
+      </aside>
+      <aside></aside>
+      <article></article>
+      <nav></nav>
+    </aside>
+    <article>
+      <nav></nav>
+      <nav></nav>
+    </article>
+  </div>
+</body>
+</html>

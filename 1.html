@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1_layout</title>
+  <style>
+    div {
+      background-color: wheat;
+      width: auto;
+      height: 800px;
+      display: flex;
+    }
+    div > article {
+      background-color: aquamarine;
+      width: 400px;
+      height: 800px;
+    }
+    div > article >article:nth-child(1) {
+      background-color: blueviolet;
+      width: 400px;
+      height: 300px;
+    }
+    div > article > article >article{
+      background-color: brown;
+      width: 400px;
+      height: 150px;
+      margin-top: 500px;
+    }
+    div > aside {
+      background-color: green;
+      width: 400px;
+      height: 800px;
+      margin-left: 900px;
+    }
+    div > aside > aside:nth-child(1) {
+      background-color: pink;
+      width: 400px;
+      height: 500px;
+    }
+    div > aside > aside:nth-child(2) {
+      background-color: yellow;
+      width: 400px;
+      height: 300px;
+    }
+    div > aside > aside:nth-child(1) >nav {
+      background-color: green;
+      width: 200px;
+      height: 500px;
+      float:right;
+    }
+    div > aside > aside:nth-child(1) >nav >nav {
+      background-color: blue;
+      width: 200px;
+      height: 250px;
+
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+    <article>
+      <article>
+        <article></article>
+      </article>
+    </article>
+    <aside>
+      <aside>
+        <nav>
+          <nav></nav>
+        </nav>
+      </aside>
+      <aside></aside>
+    </aside>
+  </div>
+</body>
+</html>

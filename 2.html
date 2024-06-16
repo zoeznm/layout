@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2_layout</title>
+  <style>
+    div {
+      background-color: wheat;
+      width: auto;
+      height: 800px;
+      display: flex;
+      justify-content: space-between;
+    }
+    aside {
+      background-color: red;
+      width: 600px;
+      height: 800px;
+      margin-left: 1100px;
+      position: relative;
+    }
+    aside > footer {
+      background-color: aquamarine;
+      width: 1665px;
+      height: 200px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    aside > footer > footer {
+      background-color: blue;
+      width: 1665px;
+      height: 100px;
+      margin-top: 100px;
+    }
+    aside > footer > footer  > footer  {
+      background-color: green;
+      width: 500px;
+      height: 100px;
+      margin-top: 100px;
+    }
+    aside > footer > footer  > footer >footer {
+      background-color: yellow;
+      width: 200px;
+      height: 100px;
+      margin-top: 100px;
+    }
+    aside > section {
+      background-color: pink;
+      width: 200px;
+      height: 800px;
+      position: absolute;
+      margin-left: 365px;
+    }
+    aside > nav {
+     
+      width: 365px;
+      height: 300px;
+      position: absolute;
+      margin-top: 300px;
+    }
+      .first{
+      background-color: lightblue;
+      width: 175px;
+      height: 150px;
+      margin-top: 150px;
+      position: absolute;
+
+    }
+      .second {
+      background-color: lightgreen;
+      width: 190px;
+      height: 150px;
+      position: absolute;
+      margin-top: 150px;
+      margin-left: 175px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div>
+    <aside>
+      <section></section>
+      <nav>
+        <nav class="first"></nav>
+        <nav class="second"></nav>
+      </nav>
+      <footer>
+        <footer>
+          <footer>
+            <footer></footer>
+          </footer>
+        </footer>
+      </footer>
+    </aside>
+  </div>
+</body>
+</html>

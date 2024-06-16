@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8_layout</title>
+  <style>
+    div {
+      background-color: wheat;
+      width: auto;
+      height: 800px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+    div >section:nth-child(1) {
+      background-color: lightcoral;
+      width: 50%;
+      height: 800px;
+      position: relative;
+    }
+    div > section:nth-child(2) {
+      background-color: lightblue;
+      width: 50%;
+      height: 800px;
+
+    }
+    div >section:nth-child(1) > aside:nth-child(1) {
+      background-color: lightgreen;
+      height: 800px;
+      width: 200px;
+    }
+    div > section:nth-child(1) > aside:nth-child(2) {
+      background-color: lightgoldenrodyellow;
+      height: 800px;
+      width: 200px;
+      margin-left: 76%;
+      position: absolute;
+      bottom: 0;
+    }
+    div >section:nth-child(1) > aside:nth-child(1) > nav {
+      background-color: lightpink;
+      width: 200px;
+      height: 200px;
+    }
+    div > section:nth-child(1) > aside:nth-child(2) > nav:nth-child(1) {
+      background-color: lightseagreen;
+      width: 200px;
+      height: 300px;
+    } 
+    div > section:nth-child(1) > aside:nth-child(2) > nav:nth-child(2) {
+      background-color: lightslategray;
+      width: 200px;
+      height: 166px;
+    }
+    div > section:nth-child(1) > aside:nth-child(2) > nav:nth-child(3) {
+      background-color: lightskyblue;
+      width: 200px;
+      height: 166px;
+    }
+    div > section:nth-child(1) > aside:nth-child(2) > nav:nth-child(4) {
+      background-color: lightcyan;
+      width: 200px;
+      height: 168px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <section>
+      <aside>
+        <nav></nav>
+      </aside>
+      <aside>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+      </aside>
+    </section>
+    <section></section>
+  </div>
+</body>
+</html>

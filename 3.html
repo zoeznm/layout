@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3_layout</title>
+  <style>
+      div {
+      background-color: wheat;
+      width: auto;
+      height: 800px;
+      display: flex;
+      justify-content: space-between;
+    }
+    div > aside {
+      background-color: aquamarine;
+      height: 800px;
+      width: 700px;
+      margin-left: 1100px;
+      position: relative;
+    }
+    div > aside > aside:nth-child(1){
+      background-color: blue;
+      height: 800px;
+      width: 190px;
+      margin-left: 375px;
+      position: absolute;
+    }
+    div > aside > aside:nth-child(2){
+      background-color: lightgreen;
+      height: 800px;
+      width: 200px;
+      margin-left: 175px;
+      
+    }
+    div > aside > aside:nth-child(1) >article{
+      background-color: red;
+      height: 190px;
+      width: 190px;
+    }
+    div > footer {
+      background-color: lightskyblue;
+      height: 400px;
+      width: 1100px;
+      position: absolute;
+      margin-top:400px;
+    }
+
+    div > footer > footer {
+      background-color: lightgoldenrodyellow;
+      height: 400px;
+      width: 200px;
+      margin-left: 700px;
+    }
+    div > footer > footer >footer {
+      background-color: lightpink;
+      height: 200px;
+      width: 200px;
+    }
+
+    div > nav {
+      background-color: lightsalmon;
+      height: 800px;
+      width: 200px;
+      position: absolute;
+    }
+    div > nav > nav {
+      background-color: lightgray;
+      height: 400px;
+      width: 200px;
+      position: absolute;
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <div>
+    <aside>
+      <aside>
+        <article></article>
+      </aside>
+      <aside></aside>
+    </aside>
+    <footer>
+      <footer>
+        <footer></footer>
+      </footer>
+    </footer>
+    <nav>
+      <nav></nav>
+    </nav>
+  </div>
+</body>
+</html>

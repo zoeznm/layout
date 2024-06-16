@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5_layout</title>
+  <style>
+    div {
+      background-color: wheat;
+      width: auto;
+      height: 800px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+    div > section:nth-child(1){
+      background-color: blue;
+      width: 200px;
+      height: 800px;
+      position: absolute;
+      right:0;
+    }
+    div > section:nth-child(2){
+      background-color: blueviolet;
+      width: 650px;
+      height: 800px;
+      position: absolute;
+      margin-left: 814px;
+    }
+    div > section:nth-child(3) {
+      background-color: lightblue;
+      width: 814px;
+      height: 800px;
+    }
+    div > section:nth-child(1) > aside {
+      background-color: green;
+      width: 200px;
+      height: 200px;
+      margin-top: 300px;
+      
+    }
+    div > nav {
+      background-color: yellow;
+      width: 1464px;
+      height: 150px;
+      position: absolute;
+    }
+    div > section:nth-child(2) > aside {
+      background-color: lightpink;
+      width: 250px;
+      height: 800px;
+      margin-left: 400px;
+
+    }
+    div > section:nth-child(3) > aside:nth-child(1){
+      background-color: lightgreen;
+      width: 814px;
+      height: 300px;
+    }
+    div >section:nth-child(3) > aside:nth-child(2) {
+      background-color: lightcoral;
+      width: 814px;
+      height: 150px;
+    }
+    div >section:nth-child(3) > aside:nth-child(2) > footer {
+      background-color: gray;
+      height: 150px;
+      width: 200px;
+    }
+    div >section:nth-child(3) > aside:nth-child(3) {
+      background-color: brown;
+      width: 600px;
+      height: 350px;
+    }
+    div >section:nth-child(3) > aside:nth-child(3) > footer {
+      background-color: aquamarine;
+      height: 350px;
+      width: 370px;
+    }
+    div >section:nth-child(3) > aside:nth-child(4) {
+      background-color: silver;
+      height: 180px;
+      width: 214px;
+      margin-left: 600px;
+      margin-bottom: 170px;
+      position: absolute;
+      bottom: 0;
+      }
+  </style>
+</head>
+<body>
+  <div>
+    <section>
+      <aside></aside>
+    </section>
+    <section>
+      <aside></aside>
+    </section>
+
+    <section>
+      <aside></aside>
+      <aside>
+        <footer></footer>
+      </aside>
+      <aside>
+        <footer></footer>
+      </aside>
+      <aside></aside>
+    </section>
+
+    <nav></nav>
+  </div>
+</body>
+</html>

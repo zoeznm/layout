@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9_layout</title>
+  <style>
+    div {
+      background-color: wheat;
+      width: auto;
+      height: 800px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+    div >section:nth-child(1) {
+      background-color: lightcoral;
+      width: 50%;
+      height: 800px;
+      position: relative;
+    }
+    div > section:nth-child(2) {
+      background-color: lightblue;
+      width: 50%;
+      height: 800px;
+      position: relative;
+
+    }
+    div > section:nth-child(2) > aside:nth-child(1) {
+      background-color: lightgoldenrodyellow;
+      height: 800px;
+      width: 225px;
+      position: absolute;
+      right: 0;
+    }
+    div > section:nth-child(2) > nav {
+      background-color: lightgreen;
+      height: 225px;
+      width: 73%;
+      position: absolute;
+      top: 0;
+    }
+    div > section:nth-child(2) > aside:nth-child(2) {
+      background-color: lightpink;
+      height: 800px;
+      width: 225px;
+      margin-left: 425px;
+    }
+    div > section:nth-child(2) > aside:nth-child(2) >section {
+      background-color: lightseagreen;
+      width: 220px;
+      height: 65%;
+    }
+    div > section:nth-child(2) > aside:nth-child(3) {
+      background-color: lightslategray;
+      width: 210px;
+      height: 80%;
+      margin-left: 215px;
+      position: absolute;
+      top: 0;
+    }
+    div > section:nth-child(2) > aside:nth-child(4) {
+      background-color: lightsalmon;
+      width: 215px;
+      height: 80%;
+      position: absolute;
+      top: 0;
+    }
+    div > section:nth-child(2) > aside:nth-child(4) > section {
+      background-color: lightskyblue;
+      width: 215px;
+      height: 81.5%;
+    }
+    
+    div > section:nth-child(2) > footer {
+      background-color: blanchedalmond;
+      width: 607px;
+      height: 160px;
+      position: absolute;
+      top: 0;
+      margin-top: 640px;
+      margin-right: 1350px;
+    }
+    
+    div > section:nth-child(1) > nav {
+      background-color: lightskyblue;
+      width: auto;
+      height: 225px;
+    }
+    div > section:nth-child(1) > footer {
+      background-color: lightgrey;
+      width: auto;
+      height: 160px;
+      margin-top: 415px;
+      position: relative;
+    }
+    div > section:nth-child(1) > footer > footer:nth-child(1) {
+      background-color: aliceblue;
+      height: 160px;
+      width: 175px;
+    }
+    div > section:nth-child(1) > footer > footer:nth-child(2) {
+      background-color: aquamarine;
+      height: 160px;
+      width: 450px;
+      position: absolute;
+      top: 0;
+      margin-left: 175px;
+      
+    }
+    div > section:nth-child(1) > footer > footer:nth-child(3) {
+      background-color: blanchedalmond;
+      height: 160px;
+      width: 250px;
+      position: absolute;
+      top: 0;
+      margin-left: 600px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div>
+    <section>
+      <nav></nav>
+      <footer>
+        <footer></footer>
+        <footer></footer>
+        <footer></footer>
+      </footer>
+    </section>
+
+
+    <section>
+      <aside></aside>
+      <aside>
+        <section></section>
+      </aside>
+      <aside></aside>
+      <aside>
+        <section></section>
+      </aside>
+      <nav></nav>
+      <footer></footer>
+    </section>
+  </div>
+</body>
+</html>
